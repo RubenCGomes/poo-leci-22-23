@@ -1,13 +1,11 @@
 package aula02;
 
-import java.util.Scanner;
+import utils.UserInput;
 
 public class Ex06 {
     public static void main(String[] args){
         int h, m, s, secs;
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Indique o tempo em segundos: ");
-        secs = inp.nextInt();
+        secs = UserInput.readIntClosed(0, Double.POSITIVE_INFINITY, "Indique o tempo em segundos: ");
         s = secs % 60;
         h = secs / 3600;
         m = secs / 60 - h * 60;

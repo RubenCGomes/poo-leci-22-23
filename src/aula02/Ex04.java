@@ -1,15 +1,12 @@
 package aula02;
 
-import java.util.Scanner;
+import utils.UserInput;
 
 public class Ex04 {
     public static void main(String[] args){
         double mont, taxa, total;
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Introduza o montante: ");
-        mont = inp.nextDouble();
-        System.out.println("Introduza a taxa mensal: ");
-        taxa = inp.nextDouble();
+        mont = UserInput.readIntClosed(0, Double.POSITIVE_INFINITY, "Introduza o montante: ");
+        taxa = UserInput.readIntClosed(0, Double.POSITIVE_INFINITY, "Introduza a taxa mensal: ");
         total = mont;
         for (int i = 1; i < 4; i++)
             total += total * (taxa / 100);
