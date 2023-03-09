@@ -19,7 +19,7 @@ class Car {
         this.kms += distance;
     }
 
-    public String toString(){ return this.make + " " + this.model + ", " + + this.year + ", kms: " + this.kms; }
+    public String toString(){ return this.make + " " + this.model + ", " + this.year + ", kms: " + this.kms; }
 }
 
 public class SimpleCarDemo {
