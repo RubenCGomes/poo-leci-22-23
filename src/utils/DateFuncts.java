@@ -102,4 +102,23 @@ public class DateFuncts {
             return new int[]{day, month};
         }
     }
+    public static int[] readDDMMYY(String message){
+        while (true) {
+            Scanner inp = new Scanner(System.in);
+            System.out.println(message);
+            String date = inp.next();
+
+            if (!date.matches("\\d{1,2}/\\d{1,2}/\\d{4}$")) {
+                System.out.println("Data inválida");
+                continue;
+            }
+
+            String[] array = date.split("/");
+            int day = parseInt(array[0]);
+            int month = parseInt(array[1]);
+            int year = parseInt(array[2]);
+
+            return new int[]{day, month, year};
+        }
+    }
 }
