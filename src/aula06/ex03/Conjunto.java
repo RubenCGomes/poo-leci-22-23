@@ -18,13 +18,6 @@ public class Conjunto {
         return false;
     }
 
-    public int getNumPos(int n){
-        for (int i = 0; i < this.conjunto.length; i++) {
-            if (this.conjunto[i] == n) return i;
-        }
-        return -1;
-    }
-
     public void remove(int n){
         if (contains(n)){
             int[] arr = new int[this.conjunto.length - 1];
