@@ -1,6 +1,6 @@
 package aula05;
 
-class DateYMD {
+public class DateYMD {
     int days, month, year;
     public DateYMD(int days, int month, int year){
         if (valid(days, month, year)){
