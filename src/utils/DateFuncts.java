@@ -34,40 +34,33 @@ public class DateFuncts {
     public static int daysInMonth(int month, int year){
         int days;
         boolean leapyear = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-        switch (month){
-            case 2:
+        switch (month) {
+            case 2 -> {
                 if (leapyear) days = 29;
                 else days = 28;
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                days = 30;
-                break;
-            default:
-                days = 31;
-                break;
+            }
+            case 4, 6, 9, 11 -> days = 30;
+            default -> days = 31;
         }
         return days;
     }
 
     public static void printCalendar(int days, int month, int year, int pos){
-        String extmonth = "";
-        switch (month){
-            case 1 : extmonth = "January"; break;
-            case 2 : extmonth = "February"; break;
-            case 3 : extmonth = "March"; break;
-            case 4 : extmonth = "April"; break;
-            case 5 : extmonth = "May"; break;
-            case 6 : extmonth = "June"; break;
-            case 7 : extmonth = "July"; break;
-            case 8 : extmonth = "August"; break;
-            case 9 : extmonth = "September"; break;
-            case 10: extmonth = "October"; break;
-            case 11: extmonth = "November"; break;
-            case 12: extmonth = "December"; break;
-        }
+        String extmonth = switch (month) {
+            case 1 -> "January";
+            case 2 -> "February";
+            case 3 -> "March";
+            case 4 -> "April";
+            case 5 -> "May";
+            case 6 -> "June";
+            case 7 -> "July";
+            case 8 -> "August";
+            case 9 -> "September";
+            case 10 -> "October";
+            case 11 -> "November";
+            case 12 -> "December";
+            default -> "";
+        };
         System.out.printf("%16s\n", extmonth + " " + year);
         System.out.printf("%3s%3s%3s%3s%3s%3s%3s\n", "Su","Mo","Tu","We","Th","Fr","Sa");
 
