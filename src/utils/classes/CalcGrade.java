@@ -1,4 +1,4 @@
-package utils;
+package utils.classes;
 
 public class CalcGrade {
     public static int finalGrade(double notaT,double notaP){

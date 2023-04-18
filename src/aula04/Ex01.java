@@ -1,6 +1,6 @@
 package aula04;
 
-import utils.UserInput;
+import utils.classes.UserInput;
 import java.util.Scanner;
 
 public class Ex01 {

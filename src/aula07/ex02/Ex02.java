@@ -3,7 +3,7 @@ package aula07.ex02;
 import java.util.Scanner;
 
 import aula05.DateYMD;
-import utils.*;
+import utils.classes.UserInput;
 
 public class Ex02 {
     public static void main(String[] args) {

@@ -1,6 +1,7 @@
 package aula03;
 
-import utils.*;
+import utils.classes.DateFuncts;
+import utils.classes.UserInput;
 
 public class Ex05 {
     public static void main(String[] args){

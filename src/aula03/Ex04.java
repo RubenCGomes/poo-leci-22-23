@@ -1,6 +1,8 @@
 package aula03;
 
-import utils.*;
+import utils.classes.CalcGrade;
+import utils.classes.RandNumber;
+import utils.classes.UserInput;
 
 public class Ex04 {
     public static void main(String[] args){

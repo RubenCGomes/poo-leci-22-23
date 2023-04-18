@@ -1,4 +1,4 @@
-package utils;
+package utils.classes;
 
 public class MathUtils {
     /*Verifies if a number is prime, returns true if prime*/

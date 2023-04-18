@@ -1,7 +1,5 @@
 package aula05;
 
-import utils.DateFuncts;
-
 class Calendar {
     /* limite 50 eventos!! */
     int[][] events = new int[12][31];

@@ -2,7 +2,7 @@ package aula02;
 
 import java.util.Scanner;
 
-import utils.UserInput;
+import utils.classes.UserInput;
 
 public class Ex11 {
     public static void main(String[] args) {

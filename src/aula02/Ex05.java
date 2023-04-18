@@ -1,6 +1,6 @@
 package aula02;
 
-import utils.UserInput;
+import utils.classes.UserInput;
 
 public class Ex05 {
     public static void main(String[] args){

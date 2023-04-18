@@ -1,7 +1,7 @@
 package aula03;
 
-import utils.UserInput;
-import utils.RandNumber;
+import utils.classes.UserInput;
+import utils.classes.RandNumber;
 
 import java.util.Objects;
 import java.util.Scanner;

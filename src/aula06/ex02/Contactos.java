@@ -2,7 +2,7 @@ package aula06.ex02;
 
 import aula05.DateYMD;
 import aula06.ex01.Pessoa;
-import utils.UserInput;
+import utils.classes.UserInput;
 
 public class Contactos extends Pessoa {
     int number; String email;

@@ -1,7 +1,8 @@
 package aula06.ex01;
 
 import aula05.*;
-import utils.*;
+import utils.classes.DateFuncts;
+import utils.classes.UserInput;
 
 public class Pessoa {
     String nome;

@@ -1,4 +1,4 @@
-package utils;
+package utils.classes;
 
 import java.util.Scanner;
 import static java.lang.Integer.parseInt;

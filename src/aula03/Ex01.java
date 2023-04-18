@@ -1,7 +1,7 @@
 package aula03;
 
-import utils.UserInput;
-import utils.MathUtils;
+import utils.classes.UserInput;
+import utils.classes.MathUtils;
 
 public class Ex01 {
     public static void main(String[] args){

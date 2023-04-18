@@ -1,4 +1,4 @@
-package utils;
+package utils.classes;
 
 import java.util.Scanner;
 
@@ -101,5 +101,10 @@ public class UserInput {
             cc = inp.nextInt();
         }
         return cc;
+    }
+
+    /*Reads a valid registration*/
+    public static boolean validRegistration(String registration){
+        return (registration.matches("^[A-Z]{2}-\\d{2}-\\d{2}|\\d{2}-[A-Z]{2}-\\d{2}|\\d{2}-\\d{2}-[A-Z]{2}|[A-Z]{2}-\\d{2}-[A-Z]{2}|[A-Z]{2}-[A-Z]{2}-\\d{2}|\\d{2}-[A-Z]{2}-[A-Z]{2}$"));
     }
 }

@@ -1,7 +1,8 @@
 package aula06.ex02;
 
 import aula05.DateYMD;
-import utils.*;
+import utils.classes.DateFuncts;
+import utils.classes.UserInput;
 
 public class Test {
     public static void main(String[] args){
