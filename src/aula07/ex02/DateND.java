@@ -85,4 +85,7 @@ public class DateND extends Date{
     public int hashCode() {
         return Objects.hash(chosenDate);
     }
+
+    public String toString(){return getDay() + "/" + getMonth() + "/" + getYear();}
+
 }
