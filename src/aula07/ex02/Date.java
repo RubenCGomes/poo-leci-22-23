@@ -1,6 +1,6 @@
 package aula07.ex02;
 
-public abstract class Date {
+public abstract class Date implements Comparable<Date> {
     public abstract int[] getDate();
     public abstract void increment();
     public abstract void decrement();
@@ -41,5 +41,9 @@ public abstract class Date {
         }
         if (month == 4 || month == 6 || month == 9 || month == 11) return days <= 30;
         return days <= 31;
+    }
+
+    public int compareTo(Date date){
+        return this.getDateDays() - date.getDateDays();
     }
 }
