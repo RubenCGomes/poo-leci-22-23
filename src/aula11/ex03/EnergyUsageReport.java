@@ -54,7 +54,7 @@ public class EnergyUsageReport {
         return total;
     }
 
-    public void generateReport(String path) throws IOException {
+    public void generateReport(String path){
         try {
             Path path1 = Paths.get(path);
 

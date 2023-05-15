@@ -14,7 +14,7 @@ public class Main {
                 Construa um programa que leia um ficheiro de texto e que conte todos os pares de palavras
                 encontrados no ficheiro e o número de ocorrências de cada par. Despreze todas as palavras
                 de tamanho inferior a 3 e considere como separadores os seguintes caracteres:""";
-        TreeMap resultParagraph = doThing(str);
+        TreeMap<String, HashMap<String, Integer>> resultParagraph = doThing(str);
 
         System.out.println(parseTreeMap(resultParagraph) + "\n\n");
 
@@ -56,9 +56,9 @@ public class Main {
         return result;
     }
 
-    public static String parseTreeMap(TreeMap genre) {
+    public static String parseTreeMap(TreeMap<String, HashMap<String, Integer>> genre) {
         String str = "";
-        Set keys = genre.keySet();
+        Set<String> keys = genre.keySet();
 
         for (Object key : keys) {
             str += key + "=" + genre.get(key) + "\n";
