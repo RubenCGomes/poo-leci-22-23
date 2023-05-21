@@ -56,12 +56,6 @@ public class EnergyUsageReport {
 
     public void generateReport(String path){
         try {
-            Path path1 = Paths.get(path);
-
-            if (Files.exists(path1))
-                Files.delete(path1);
-            Files.createFile(path1);
-
             try (FileWriter file = new FileWriter(path)) {
                 for (Customer customer : customers) {
                     int id = customer.getCustomerId();
