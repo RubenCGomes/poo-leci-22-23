@@ -39,16 +39,16 @@ public class SortByInitial {
         out.close();
     }
     public static String parseTreeMap(TreeMap<Character, TreeMap<String, Integer>> treeMap) {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         Set<Character> keys = treeMap.keySet();
 
         for (Object key : keys) {
-            str += key + ": ";
+            str.append(key).append(": ");
             for (Object key2 : treeMap.get(key).keySet()) {
-                str += key2 + ", " + treeMap.get(key).get(key2) + "; ";
+                str.append(key2).append(", ").append(treeMap.get(key).get(key2)).append("; ");
             }
-            str += "\n";
+            str.append("\n");
         }
-        return str;
+        return str.toString();
     }
 }
